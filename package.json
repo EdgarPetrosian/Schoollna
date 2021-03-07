@@ -1,0 +1,48 @@
+{
+  "name": "Schoollna",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "ios6s": "npm cache clean -f | react-native run-ios --simulator='iPhone 6s' | react-native-log-ios Schoollna",
+    "ios10": "npm cache clean -f | react-native run-ios --simulator='iPhone X' | react-native-log-ios Schoollna",
+    "ios": "npm cache clean -f | react-native run-ios --simulator='iPhone 11' | react-native-log-ios Schoollna",
+    "ios12": "npm cache clean -f | react-native run-ios --simulator='iPhone 12' | react-native-log-ios Schoollna",
+    "ios8": "npm cache clean -f | react-native run-ios --simulator='iPhone 8' | react-native-log-ios Schoollna",
+    "iosXs": "npm cache clean -f | react-native run-ios --simulator='iPhone Xs' | react-native-log-ios Schoollna",
+    "androidold": "source ~/.bash_profile | npm cache clean -f | react-native run-android | react-native log-android",
+    "android": "npm cache clean -f | react-native run-android | react-native log-android",
+    "bundle:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
+    "postinstall": "npm run bundle:ios"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/drawer": "^5.12.4",
+    "@react-navigation/native": "^5.9.3",
+    "@react-navigation/stack": "^5.14.3",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^1.13.0",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.18.1",
+    "react-native-svg": "^12.1.0",
+    "react-native-vector-icons": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

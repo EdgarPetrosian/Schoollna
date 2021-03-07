@@ -1,0 +1,1 @@
+export const DRAWER_LOGO = require('../../assets/images/pngios/drawer-logo.png');
